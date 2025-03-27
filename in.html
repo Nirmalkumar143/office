@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#hotels">Hotels</a></li>
+            <li><a href="#trains">Trains</a></li>
+            <li><a href="#flights">Flights</a></li>
+            <li><a href="#weather">Weather</a></li>
+            <li><a href="#location">Location</a></li>
+        </ul>
+    </nav>
+
+    <h1>Welcome to Travel Assistant</h1>
+
+    <section id="hotels">
+        <h2>Hotel Booking</h2>
+        <input type="text" id="hotelLocation" placeholder="Enter City">
+        <button onclick="searchHotels()">Search Hotels</button>
+        <div id="hotelResults"></div>
+    </section>
+
+    <section id="trains">
+        <h2>Train Booking</h2>
+        <input type="text" id="trainFrom" placeholder="From">
+        <input type="text" id="trainTo" placeholder="To">
+        <button onclick="searchTrains()">Search Trains</button>
+        <div id="trainResults"></div>
+    </section>
+
+    <section id="flights">
+        <h2>Flight Booking</h2>
+        <input type="text" id="flightFrom" placeholder="From">
+        <input type="text" id="flightTo" placeholder="To">
+        <button onclick="searchFlights()">Search Flights</button>
+        <div id="flightResults"></div>
+    </section>
+
+    <section id="weather">
+        <h2>Weather</h2>
+        <input type="text" id="weatherLocation" placeholder="Enter City">
+        <button onclick="getWeather()">Check Weather</button>
+        <div id="weatherResult"></div>
+    </section>
+
+    <section id="location">
+        <h2>Location Services</h2>
+        <button onclick="getLocation()">Get My Location</button>
+        <div id="locationResult"></div>
+    </section>
+
+</body>
+</html>
